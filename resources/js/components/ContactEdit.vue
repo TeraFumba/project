@@ -102,12 +102,12 @@
         </table>
 
         <div class="row">
-            <div class="row" style="padding: 10px 10px 10px">
+            <div class="row" >
                 <div class="col-md-6">
+                </div>
+                <div class="col-md-6" style="float: right">
                     <button @click='save()' class="btn btn-success" >Save and back</button>
                     <button  class="btn btn-default">Cancel</button>
-                </div>
-                <div class="col-md-6">
                 </div>
             </div>
         </div>

@@ -38734,11 +38734,13 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "row", staticStyle: { padding: "10px 10px 10px" } },
-        [
-          _c("div", { staticClass: "col-md-6" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-6", staticStyle: { float: "right" } },
+          [
             _c(
               "button",
               {
@@ -38753,11 +38755,9 @@ var render = function() {
             ),
             _vm._v(" "),
             _c("button", { staticClass: "btn btn-default" }, [_vm._v("Cancel")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6" })
-        ]
-      )
+          ]
+        )
+      ])
     ])
   ])
 }
