@@ -1947,12 +1947,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['numberTypes'],
   data: function data() {
@@ -2036,12 +2030,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -2240,6 +2228,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DataTableComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DataTableComponent */ "./resources/js/components/DataTableComponent.vue");
 /* harmony import */ var _PaginationComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PaginationComponent.vue */ "./resources/js/components/PaginationComponent.vue");
+//
+//
 //
 //
 //
@@ -37874,7 +37864,7 @@ var render = function() {
                     "small",
                     { staticClass: "form-text text-muted text-danger" },
                     [
-                      _c("strong", [
+                      _c("strong", { staticClass: "text-danger" }, [
                         _vm._v(
                           " " + _vm._s(_vm.error["contacts.f_name"][0]) + " "
                         )
@@ -37919,7 +37909,7 @@ var render = function() {
                     "small",
                     { staticClass: "form-text text-muted text-danger" },
                     [
-                      _c("strong", [
+                      _c("strong", { staticClass: "text-danger" }, [
                         _vm._v(
                           " " + _vm._s(_vm.error["contacts.l_name"][0]) + " "
                         )
@@ -37995,7 +37985,7 @@ var render = function() {
                           "small",
                           { staticClass: "form-text text-muted text-danger" },
                           [
-                            _c("strong", [
+                            _c("strong", { staticClass: "text-danger" }, [
                               _vm._v(
                                 _vm._s(
                                   _vm.error[
@@ -38127,23 +38117,19 @@ var render = function() {
                     _vm.error[
                       "contacts.contact_numbers." + index + ".number_type"
                     ]
-                      ? _c(
-                          "small",
-                          { staticClass: "form-text text-muted text-danger" },
-                          [
-                            _c("strong", [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.error[
-                                    "contacts.contact_numbers." +
-                                      index +
-                                      ".number_type"
-                                  ][0]
-                                )
+                      ? _c("small", { staticClass: "form-text text-muted " }, [
+                          _c("strong", { staticClass: "text-danger" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.error[
+                                  "contacts.contact_numbers." +
+                                    index +
+                                    ".number_type"
+                                ][0]
                               )
-                            ])
-                          ]
-                        )
+                            )
+                          ])
+                        ])
                       : _vm._e()
                   ])
                 ]),
@@ -38184,7 +38170,7 @@ var render = function() {
                           "small",
                           { staticClass: "form-text text-muted text-danger" },
                           [
-                            _c("strong", [
+                            _c("strong", { staticClass: "text-danger" }, [
                               _vm._v(
                                 _vm._s(
                                   _vm.error[
@@ -38234,30 +38220,25 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "btn-group", staticStyle: { float: "right" } }, [
       _c(
-        "div",
-        { staticClass: "row", staticStyle: { padding: "10px 10px 10px" } },
-        [
-          _c("div", { staticClass: "col-md-6" }, [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-success",
-                on: {
-                  click: function($event) {
-                    return _vm.save()
-                  }
-                }
-              },
-              [_vm._v("Save and back")]
-            ),
-            _vm._v(" "),
-            _c("button", { staticClass: "btn btn-default" }, [_vm._v("Cancel")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6" })
-        ]
+        "a",
+        { staticClass: "btn btn-default", attrs: { href: "/contact_list" } },
+        [_vm._v("Cancel")]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-success",
+          attrs: { href: "#" },
+          on: {
+            click: function($event) {
+              return _vm.save()
+            }
+          }
+        },
+        [_vm._v("Save and back")]
       )
     ])
   ])
@@ -38369,7 +38350,7 @@ var render = function() {
                     "small",
                     { staticClass: "form-text text-muted text-danger" },
                     [
-                      _c("strong", [
+                      _c("strong", { staticClass: "text-danger" }, [
                         _vm._v(
                           " " + _vm._s(_vm.error["contacts.f_name"][0]) + " "
                         )
@@ -38414,7 +38395,7 @@ var render = function() {
                     "small",
                     { staticClass: "form-text text-muted text-danger" },
                     [
-                      _c("strong", [
+                      _c("strong", { staticClass: "text-danger" }, [
                         _vm._v(
                           " " + _vm._s(_vm.error["contacts.l_name"][0]) + " "
                         )
@@ -38490,7 +38471,7 @@ var render = function() {
                           "small",
                           { staticClass: "form-text text-muted text-danger" },
                           [
-                            _c("strong", [
+                            _c("strong", { staticClass: "text-danger" }, [
                               _vm._v(
                                 _vm._s(
                                   _vm.error[
@@ -38630,7 +38611,7 @@ var render = function() {
                           "small",
                           { staticClass: "form-text text-muted text-danger" },
                           [
-                            _c("strong", [
+                            _c("strong", { staticClass: "text-danger" }, [
                               _vm._v(
                                 _vm._s(
                                   _vm.error[
@@ -38683,7 +38664,7 @@ var render = function() {
                           "small",
                           { staticClass: "form-text text-muted text-danger" },
                           [
-                            _c("strong", [
+                            _c("strong", { staticClass: "text-danger" }, [
                               _vm._v(
                                 _vm._s(
                                   _vm.error[
@@ -38733,31 +38714,26 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-6" }),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6", staticStyle: { float: "right" } },
-          [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-success",
-                on: {
-                  click: function($event) {
-                    return _vm.save()
-                  }
-                }
-              },
-              [_vm._v("Save and back")]
-            ),
-            _vm._v(" "),
-            _c("button", { staticClass: "btn btn-default" }, [_vm._v("Cancel")])
-          ]
-        )
-      ])
+    _c("div", { staticClass: "btn-group", staticStyle: { float: "right" } }, [
+      _c(
+        "a",
+        { staticClass: "btn btn-default", attrs: { href: "/contact_list" } },
+        [_vm._v("Cancel")]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-success",
+          attrs: { href: "#" },
+          on: {
+            click: function($event) {
+              return _vm.save()
+            }
+          }
+        },
+        [_vm._v("Save and back")]
+      )
     ])
   ])
 }
@@ -38893,33 +38869,41 @@ var render = function() {
                 _c("td", [_vm._v(_vm._s(co.number))]),
                 _vm._v(" "),
                 _c("td", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-xs btn-default",
-                      attrs: { href: "#" },
-                      on: {
-                        click: function($event) {
-                          return _vm.editContact(co.id)
+                  _c("div", { staticClass: "btn-group" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-xs btn-default",
+                        attrs: { href: "#" },
+                        on: {
+                          click: function($event) {
+                            return _vm.editContact(co.id)
+                          }
                         }
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-edit" }), _vm._v(" Edit")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-xs btn-default",
-                      attrs: { href: "#" },
-                      on: {
-                        click: function($event) {
-                          return _vm.deleteContact(co.id)
+                      },
+                      [_c("i", { staticClass: "fa fa-edit" }), _vm._v(" Edit")]
+                    ),
+                    _vm._v("\t \n                    "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-xs btn-default",
+                        attrs: { href: "#" },
+                        on: {
+                          click: function($event) {
+                            return _vm.deleteContact(co.id)
+                          }
                         }
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-trash" }), _vm._v(" Delete")]
-                  )
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fa fa-trash",
+                          staticStyle: { color: "red" }
+                        }),
+                        _vm._v(" Delete")
+                      ]
+                    )
+                  ])
                 ])
               ])
             }),

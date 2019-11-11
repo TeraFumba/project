@@ -27,10 +27,12 @@
                 <td>{{ co.number }}</td>
 
                 <td>
-                    <a href="#" @click="editContact(co.id)" class="btn btn-xs btn-default" >
-                        <i class="fa fa-edit"></i> Edit</a>
-                    <a href="#" @click="deleteContact(co.id)" class="btn btn-xs btn-default" >
-                        <i class="fa fa-trash"></i> Delete</a>
+                    <div class="btn-group" >
+                        <a href="#" @click="editContact(co.id)" class="btn btn-xs btn-default" >
+                            <i class="fa fa-edit"></i> Edit</a>	&nbsp;
+                        <a href="#" @click="deleteContact(co.id)" class="btn btn-xs btn-default" >
+                            <i style="color: red" class="fa fa-trash"></i> Delete</a>
+                    </div>
                 </td>
             </tr>
             </tbody>

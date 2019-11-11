@@ -16,7 +16,7 @@
                 <td>
                     <input class="form-control" type="text"  placeholder="Please Enter First Name here"  v-model="contacts.f_name" >
                     <small class="form-text text-muted text-danger"  v-if="(error['contacts.f_name'])">
-                        <strong> {{error['contacts.f_name'][0]}} </strong> </small>
+                        <strong class="text-danger"> {{error['contacts.f_name'][0]}} </strong> </small>
                 </td>
             </tr>
             <tr>
@@ -24,7 +24,7 @@
                 <td>
                     <input class="form-control" type="text"  placeholder="Please Enter Last Name here"  v-model="contacts.l_name" >
                     <small class="form-text text-muted text-danger"  v-if="(error['contacts.l_name'])">
-                        <strong> {{error['contacts.l_name'][0]}} </strong> </small>
+                        <strong class="text-danger"> {{error['contacts.l_name'][0]}} </strong> </small>
                 </td>
             </tr>
 
@@ -44,7 +44,7 @@
                         <td>
                             <input class="form-control"  type="text" placeholder="Email"  v-model="mail.email" >
                             <small class="form-text text-muted text-danger" v-if="(error['contacts.email_addresses.'+index+'.email'])">
-                                <strong>{{error['contacts.email_addresses.'+index+'.email'][0]}}</strong></small>
+                                <strong class="text-danger">{{error['contacts.email_addresses.'+index+'.email'][0]}}</strong></small>
                         </td>
                     </tr>
                 </template>
@@ -72,8 +72,8 @@
                                     {{type.label}}
                                 </option>
                             </select>
-                            <small class="form-text text-muted text-danger" v-if="(error['contacts.contact_numbers.'+index+'.number_type'])">
-                                <strong>{{error['contacts.contact_numbers.'+index+'.number_type'][0]}}</strong></small>
+                            <small class="form-text text-muted " v-if="(error['contacts.contact_numbers.'+index+'.number_type'])">
+                                <strong class="text-danger">{{error['contacts.contact_numbers.'+index+'.number_type'][0]}}</strong></small>
                         </td>
                     </tr>
                     <tr>
@@ -81,7 +81,7 @@
                         <td>
                             <input class="form-control"  type="text" placeholder="Please enter number here"  v-model="number.number" >
                             <small class="form-text text-muted text-danger" v-if="(error['contacts.contact_numbers.'+index+'.number'])">
-                                <strong>{{error['contacts.contact_numbers.'+index+'.number'][0]}}</strong></small>
+                                <strong class="text-danger">{{error['contacts.contact_numbers.'+index+'.number'][0]}}</strong></small>
                         </td>
                     </tr>
                 </template>
@@ -99,17 +99,11 @@
             </tbody>
 
         </table>
-
-        <div class="row">
-            <div class="row" style="padding: 10px 10px 10px">
-                <div class="col-md-6">
-                    <button @click='save()' class="btn btn-success" >Save and back</button>
-                    <button  class="btn btn-default">Cancel</button>
-                </div>
-                <div class="col-md-6">
-                </div>
-            </div>
+        <div class="btn-group" style="float: right">
+            <a href="/contact_list" class="btn btn-default">Cancel</a>
+            <a href="#" @click='save()' class="btn btn-success">Save and back</a>
         </div>
+
     </div>
 </template>
 
