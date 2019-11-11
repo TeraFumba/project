@@ -27,9 +27,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 - clone the project: git clone https://github.com/TeraFumba/project.git project
 - create .env file.
 - composer install
-- php artisan key:generate
 - php artisan migrate
 - php artisan db:seed --class=ContactNumberseSeeder
+- php artisan key:generate
 - npm install
 - npm run dev
 
